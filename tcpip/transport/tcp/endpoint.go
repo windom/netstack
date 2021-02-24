@@ -512,6 +512,7 @@ type endpoint struct {
 	gso *stack.GSO
 
 	// TODO(b/142022063): Add ability to save and restore per endpoint stats.
+	_     byte
 	stats Stats
 
 	// tcpLingerTimeout is the maximum amount of a time a socket
